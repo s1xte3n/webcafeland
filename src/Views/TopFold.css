@@ -1,95 +1,201 @@
-.header {
-  width: 80%; /* Set width to 80% */
-  margin: 0 auto; /* Center the container */
-  padding: 20px;
-  background: #f9f7f4;
+/* General Styles */
+.topfold-container {
+  width: 100%;
 }
 
-.header-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.topfold {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #6a00f4, #ff6b6b, #00c9a7, #ffb400);
+  background-size: 300% 300%;
+  animation: gradientBG 6s ease infinite;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  padding-top: 20px;
 }
 
-.nav {
+/* Gradient animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Navbar */
+.navbar {
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 15px 20px;
+  background: white;
+  border-radius: 20px;
+  margin-top: 10px;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 10px; /* Adds spacing between logo and slogan */
+  gap: 10px;
 }
 
 .logo {
-  width: 40px; /* Adjusted logo size for better fit */
+  width: 40px;
+  height: 40px;
 }
 
-.slogan {
-  font-size: 20px;
-  font-weight: 500;
-  color: #333;
+/* Nav Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.content-catalog-btn {
+  background: #333;
+  color: white;
+}
+
+.take-website-btn {
+  background: #0078d4;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+/* Button Hover Effects */
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.content-catalog-btn:hover {
+  background: #444;
+}
+
+.take-website-btn:hover {
+  background: #005fa3;
 }
 
 /* Hero Section */
-.hero {
+.hero-section {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 40px;
+  max-width: 800px;
+  width: 90%;
+}
+
+.hero-title {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  margin: 10px 0 20px;
+}
+
+/* Watch Demo Button */
+.watchdemo-btn {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-
-.hero-text {
-  max-width: 50%;
-  margin-right: 20px;
-}
-
-.highlight {
-  font-size: 42px;
-  font-weight: bold;
-  color: #111;
-}
-
-.secondary {
-  font-size: 42px;
-  font-weight: 300;
-  color: #777;
-}
-
-.offer {
-  font-size: 18px;
-  color: #555;
-}
-
-.cta-button {
-  background: #008c45;
+  justify-content: center;
+  gap: 8px;
+  background: #0078d4;
   color: white;
-  padding: 15px 25px;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.watchdemo-btn .play-icon {
+  font-size: 16px;
+}
+
+.watchdemo-btn:hover {
+  background: #005fa3;
+  transform: scale(1.05);
+}
+
+.demo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.demo-duration {
+  font-size: 12px;
+  color: rgb(202, 202, 202);
+  margin-left: 5px;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal content */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Close button */
+.close-btn {
+  background: #ff6b6b;
+  color: white;
+  padding: 10px 15px;
   border: none;
   border-radius: 5px;
-  margin-top: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }
 
-.cta-button:hover {
-  background: #006c34;
+.close-btn:hover {
+  background: #ff4d4d;
 }
 
-.guarantee {
-  font-size: 14px;
-  color: #777;
-  margin-top: 10px;
-}
-
-/* Hero Image */
-.hero-image img {
-  width: 350px; /* Adjusted size for better fit */
+/* Adjust iframe size */
+iframe {
   max-width: 100%;
-  border-radius: 16px;
-}
-
-/* Add shadow effect to the image */
-.image-shadow {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 450px; /* Adjust height */
 }

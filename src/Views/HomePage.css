@@ -1,4 +1,6 @@
-/* src/Views/HomePage.css */
 .cafe-homepage {
-    padding: 50px;
-}
+    padding: 5px;
+    width: 100%; /* Adjusted to make it smaller */
+    margin: 0 auto; /* This centers the element horizontally */
+  }
+  
