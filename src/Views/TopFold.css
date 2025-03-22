@@ -9,13 +9,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Changed to flex-start to align content to the top */
   background: linear-gradient(45deg, #6a00f4, #ff6b6b, #00c9a7, #ffb400);
   background-size: 300% 300%;
   animation: gradientBG 6s ease infinite;
   color: white;
   font-family: 'Arial', sans-serif;
-  padding-top: 20px;
+  padding-top: 2%; /* Reduced top padding to push content up */
+  padding-bottom: 20px; /* Add some space at the bottom */
 }
 
 /* Gradient animation */
@@ -32,9 +33,11 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 20px;
-  background: white;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
   border-radius: 20px;
-  margin-top: 10px;
+  margin-top: 10px; /* Reduced margin to bring navbar higher */
+  margin-bottom: 20px; /* Space between navbar and hero section */
+  backdrop-filter: blur(10px); /* Blur effect for a modern feel */
 }
 
 .logo-container {
@@ -44,8 +47,8 @@
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
+  width: 35px; /* Adjusted logo size */
+  height: 35px; /* Adjusted logo size */
 }
 
 /* Nav Buttons */
@@ -81,6 +84,7 @@
 /* Button Hover Effects */
 .btn:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Added shadow effect for hover */
 }
 
 .content-catalog-btn:hover {
@@ -97,9 +101,9 @@
   background: rgba(255, 255, 255, 0.1);
   padding: 40px;
   border-radius: 20px;
-  margin-top: 40px;
   max-width: 800px;
   width: 90%;
+  margin-top: 20px; /* Reduced margin to bring hero section closer to navbar */
 }
 
 .hero-title {
@@ -138,6 +142,7 @@
 .watchdemo-btn:hover {
   background: #005fa3;
   transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Added shadow effect for hover */
 }
 
 .demo-text {

@@ -3,6 +3,9 @@ import './TopFold.css';
 import webcafeBeer from '../assets/images/webcafe-beer-v1.png';
 import { FaRegPlayCircle } from 'react-icons/fa';
 
+import Banner from '../components/Banner';
+import Modal from '../components/Modal'; // Import the Modal component
+
 const TopFold = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [videoUrl, setVideoUrl] = useState('');
@@ -69,21 +72,8 @@ const TopFold = () => {
         </div>
       </div>
 
-      {/* Modal */}
-      {isModalOpen && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="close-btn" onClick={closeModal}>Close</button>
-            <iframe
-              title="YouTube Video"
-              src={videoUrl}
-              frameBorder="0"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-      )}
+      {/* Use the Modal component here */}
+      <Modal isOpen={isModalOpen} closeModal={closeModal} videoUrl={videoUrl} />
     </div>
   );
 };
