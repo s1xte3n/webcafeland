@@ -1,13 +1,14 @@
-// src/HomePage.js
-import React, { useState} from "react";
-import './HomePage.css';
-
+import React from "react";
+import Banner from "../components/Banner"; // Adjust path accordingly
 import TopFold from "./TopFold.js";
+import Investment from "./Investment.js";
 
 const HomePage = () => {
     return (
-        <div className="cafe-homepage">
+        <div>
+            <Banner newsBulletin="Latest news: WebCafe's new AI features are live!" />
             <TopFold />
+            <Investment />
         </div>
     );
 };

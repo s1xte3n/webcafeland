@@ -1,0 +1,53 @@
+/* Slim, minimal banner */
+.banner {
+  background: #333; /* Dark background to blend in */
+  color: #fff; /* White text for contrast */
+  padding: 5px 0; /* Very minimal height */
+  text-align: center;
+  font-size: 14px; /* Small text */
+  font-weight: 400; /* Light weight for non-distracting feel */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Keep it on top */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow to differentiate */
+  cursor: pointer; /* Change cursor to pointer for click */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.banner:hover {
+  transform: translateY(-2px); /* Move 2px up on hover */
+}
+
+/* News ticker wrapper to make sure it hides overflow */
+.news-ticker-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden; /* Hide the overflow */
+  width: 100%;
+}
+
+.news-ticker {
+  white-space: nowrap;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 13px;
+  animation: ticker 10s linear infinite; /* Smooth scroll for news */
+  animation-play-state: running; /* Start animation */
+  transition: animation-play-state 0.3s ease; /* Smooth transition for pausing */
+}
+
+.banner:hover .news-ticker {
+  animation-play-state: paused; /* Pause animation when hovered */
+}
+
+/* Keyframe animation for scrolling effect */
+@keyframes ticker {
+  0% {
+    transform: translateX(100%); /* Start from off-screen right */
+  }
+  100% {
+    transform: translateX(-100%); /* End at off-screen left */
+  }
+}
