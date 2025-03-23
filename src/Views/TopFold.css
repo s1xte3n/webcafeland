@@ -204,3 +204,209 @@ iframe {
   max-width: 100%;
   height: 450px; /* Adjust height */
 }
+
+/* Mobile and Tablet Responsiveness */
+
+/* For small mobile screens */
+@media (max-width: 480px) {
+  .topfold-container {
+    padding: 10px;
+  }
+
+  .topfold {
+    padding-top: 5%; /* Adjust padding for smaller screens */
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .hero-section {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .hero-title {
+    font-size: 36px; /* Adjusted for mobile */
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .watchdemo-btn {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .watchdemo-btn .play-icon {
+    font-size: 18px;
+  }
+
+  .demo-text {
+    align-items: center;
+  }
+
+  .demo-duration {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+
+  /* Modal adjustments for smaller screens */
+  .modal-content {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  iframe {
+    height: 300px;
+  }
+}
+
+/* For tablets (portrait mode) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .hero-section {
+    padding: 30px;
+    margin-top: 20px;
+  }
+
+  .hero-title {
+    font-size: 48px; /* Adjusted for tablet */
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+
+  .watchdemo-btn {
+    max-width: 100%;
+    width: 100%;
+    padding: 12px 25px;
+    font-size: 18px;
+  }
+
+  .watchdemo-btn .play-icon {
+    font-size: 20px;
+  }
+
+  .demo-text {
+    align-items: center;
+  }
+
+  .demo-duration {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  /* Modal adjustments for tablets */
+  .modal-content {
+    width: 80%;
+    max-width: 600px;
+  }
+
+  iframe {
+    height: 400px;
+  }
+}
+
+/* For larger tablets and small laptops */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .nav-buttons {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .btn {
+    padding: 12px 25px;
+    font-size: 18px;
+  }
+
+  .hero-section {
+    padding: 40px;
+    margin-top: 30px;
+  }
+
+  .hero-title {
+    font-size: 55px; /* Adjusted for larger tablets */
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+
+  .watchdemo-btn {
+    width: auto;
+    padding: 12px 30px;
+    font-size: 20px;
+  }
+
+  .watchdemo-btn .play-icon {
+    font-size: 24px;
+  }
+
+  .demo-text {
+    align-items: center;
+  }
+
+  .demo-duration {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  /* Modal adjustments for larger screens */
+  .modal-content {
+    width: 70%;
+    max-width: 700px;
+  }
+
+  iframe {
+    height: 450px;
+  }
+}

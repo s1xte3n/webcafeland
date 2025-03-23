@@ -1,3 +1,4 @@
+/* Base Styles */
 .investment-container {
     text-align: center;
     padding: 50px 20px;
@@ -95,5 +96,90 @@
   .featured:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+  }
+  
+  /* Mobile Responsiveness (Up to 480px) */
+  @media (max-width: 480px) {
+    .investment-heading {
+      font-size: 22px;
+    }
+  
+    .investment-cards {
+      gap: 10px;
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .investment-card {
+      max-width: 100%;
+      width: 100%; /* Ensure full width on mobile */
+      height: auto;
+    }
+  
+    .investment-image {
+      height: 150px;
+    }
+  
+    .investment-title {
+      font-size: 16px;
+    }
+  
+    .investment-description {
+      font-size: 12px;
+    }
+  
+    .investment-link {
+      font-size: 10px;
+    }
+  }
+  
+  /* Tablet Responsiveness (Up to 768px) */
+  @media (max-width: 768px) {
+    .investment-heading {
+      font-size: 24px;
+    }
+  
+    .investment-cards {
+      gap: 15px;
+      flex-direction: row;
+      padding: 20px;
+    }
+  
+    .investment-card {
+      max-width: 45%;  /* Adjust card width to 45% on tablet */
+      width: 100%;    /* Ensure 100% width when space allows */
+      height: auto;
+    }
+  
+    .investment-image {
+      height: 160px;
+    }
+  
+    .investment-title {
+      font-size: 17px;
+    }
+  
+    .investment-description {
+      font-size: 13px;
+    }
+  
+    .investment-link {
+      font-size: 11px;
+    }
+  }
+  
+  /* New breakpoint for smaller screens (from 480px to 600px) */
+  @media (max-width: 480px) {
+    .investment-cards {
+      gap: 10px;
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .investment-card {
+      max-width: 100%;
+      width: 100%;  /* Cards should take up full width */
+      height: auto;
+    }
   }
   
